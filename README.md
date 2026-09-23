@@ -1,50 +1,51 @@
 # Node.js Assignment 12 - JWT Authentication
 
-A Node.js & Express application implementing JSON Web Token (JWT) Authentication.
+A simple **JWT-based Authentication System** built using Node.js, Express.js, MongoDB and Mongoose.
 
-## Project Structure
+## Features
+
+- User Registration
+- User Login
+- Password Authentication
+- JWT Token Generation
+- Protected Profile Route
+- Authentication Middleware
+- MongoDB Database Integration
+- REST API
+
+## Tech Stack
+
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT (JSON Web Token)
+- dotenv
+
+## API Response
+
+<img width="864" height="280" alt="image" src="https://github.com/user-attachments/assets/eae62842-c39b-4e91-988c-cf52471170bf" />
+
+
+## 📂 Project Structure
 
 ```text
-Assignment 12/
-└── JWT Authetication/
-    ├── middleware/
-    │   └── authMiddleware.js
-    ├── models/
-    │   └── user.js
-    ├── .env.example
-    ├── package.json
-    └── server.js
-```
+JWT Authentication/
+├── middleware/
+│   └── authMiddleware.js
+├── models/
+│   └── user.js
+├── server.js
+├── package.json
+├── .env
+└── .env.example
 
-## Setup Instructions
+Token Secret: mysecretkey123
 
-1. Navigate to the project directory:
-   ```bash
-   cd "JWT Authetication"
-   ```
+npm install
+npm start
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
 
-3. Create a `.env` file based on `.env.example`:
-   ```env
-   PORT=3000
-   MONGO_URI=your_mongodb_connection_string
-   JWT_SECRET=your_jwt_secret
-   ```
 
-4. Start the server:
-   ```bash
-   npm start
-   # or for development:
-   npm run dev
-   ```
 
-## API Endpoints
-
-- `GET /` - Public health check endpoint
-- `POST /login` - User login endpoint (generates JWT token)
-- `GET /profile` - Protected route (requires `Authorization: Bearer <token>` header)
 
